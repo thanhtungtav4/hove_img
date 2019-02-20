@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<div id="app">
+		<img src="dong.jpg">
+	</div>
+<style type="text/css">
+	#app{
+		margin: 0 auto;
+		width: 500px;
+		height: 200px;
+		background: blue;
+		margin-top: 100px;
+		overflow: hidden;
+		position: relative;
+	}
+	img{
+		position: absolute;
+		width: 100%;
+		height: auto;
+		transition: all ease-in-out 3.2s;
+		top: 0px;
+	}
+	#app:hover img{
+		transform: translateY(-100%);
+		top: 100%;
+
+	}
+</style>
+<script type="text/javascript">
+	console.log(document.querySelector('div#app img'))
+</script>
+</body>
+</html>
